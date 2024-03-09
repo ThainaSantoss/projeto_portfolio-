@@ -1,0 +1,146 @@
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+}
+
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2rem;
+  font-family: var(--fonte-primaria);
+  padding: 1rem;
+}
+
+.destaque-titulo {
+  color: var(--cor-terceiaria);
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 1.25rem;
+  font-family: var(--fonte-secundaria);
+  padding: 1rem;
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.apresentacao_navegacao {
+  border: 2px solid var(--cor-terceiaria);
+  flex-basis: 40%;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1.25rem 0;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.apresentacao_navegacao img {
+  width: 1.75rem;
+}
+
+.apresentacao_navegacao:hover {
+  background-color: var(--cor-hover);
+}
+
+.container__img {
+  display: flex;
+}
+
+.container__img img {
+    width: 80%;
+}
+
+.apresentacao__subtitulo_botoes {
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .apresentacao {
+    flex-direction: column;
+    max-width: 32rem;
+    row-gap: 5rem;
+  }
+
+  .apresentacao__conteudo {
+    width: 100%;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 1.25rem;
+  }
+
+  .apresentacao__conteudo__texto {
+    font-size: 1rem;
+  }
+
+  .apresentacao__subtitulo_botoes {
+    font-size: 1rem;
+  }
+
+  .apresentacao_navegacao {
+    font-size: 1.25rem;
+    flex-basis: 100%;
+  }
+
+  .container__img img {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .apresentacao {
+    flex-direction: column;
+    max-width: 32rem;
+    row-gap: 5rem;
+  }
+
+  .apresentacao__conteudo {
+    width: 100%;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+  }
+
+  .apresentacao__conteudo__texto {
+    font-size: 1.25rem;
+  }
+
+  .apresentacao__subtitulo_botoes {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao_navegacao {
+    font-size: 1.5rem;
+    flex-basis: 100%;
+  }
+
+  .container__img img {
+    width: 75%;
+    margin: 0 auto;
+  }
+}

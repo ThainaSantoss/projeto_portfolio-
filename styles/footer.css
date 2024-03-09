@@ -1,0 +1,23 @@
+.rodape {
+  padding: 24px;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terceiaria);
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .rodape {
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .rodape {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+}

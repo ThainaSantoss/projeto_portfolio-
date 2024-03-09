@@ -1,0 +1,31 @@
+.cabecalho__menu {
+  display: flex;
+  max-width: var(--largura-maxima);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cabecalho__menu_link {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-terceiaria);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .cabecalho__menu_link {
+    font-size: 0.875rem;
+  }
+
+  .cabecalho__menu {
+
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cabecalho__menu {
+    max-width: 32rem;
+  }
+}
